@@ -1,0 +1,10 @@
+{
+    "version": 4,
+    "vendor": {
+        "conan": {}
+    },
+    "include": [
+        "/home/xreal/workspace/plugin_example/build_native/Release/generators/CMakePresets.json",
+        "/home/xreal/workspace/plugin_example/build_xrlinux/Release/generators/CMakePresets.json"
+    ]
+}

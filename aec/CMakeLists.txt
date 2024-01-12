@@ -1,0 +1,17 @@
+set(EXPORT_BASENAME AEC)
+set(PLATFORM_CONFIG_BASENAME AEC)
+set(SYSTEM_CONFIG_BASENAME AEC)
+set(VERSION_BASENAME AEC)
+
+FIND_PACKAGE(OpenCV REQUIRED)
+FIND_PACKAGE(yaml-cpp REQUIRED)
+
+add_compile_definitions(NRPLUGIN)
+
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fno-rtti")
+#set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}")
+
+set( TARGET_BASE_NAME aec )
+ADD_PLUGIN_LIBRARIES(${TARGET_BASE_NAME} shared_library static_library)
+
+add_subdirectory(library)
